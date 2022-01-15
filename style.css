@@ -1,0 +1,238 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  color: #3d3c39c9;
+  font-weight: 600;
+}
+header {
+  margin: 100px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.heading-title {
+  font-size: 52px;
+  margin-top: 120px;
+  margin-bottom: 0;
+}
+.heading-details {
+  margin-bottom: 50px;
+}
+.main-heading {
+  position: relative;
+}
+.button {
+  text-decoration: none;
+  color: white;
+  font-weight: 900;
+  background-color: #e02c6d;
+  border-radius: 41px;
+  padding: 10px 24px;
+}
+
+main-img {
+  width: 475px;
+  height: 475px;
+  margin-right: 100px;
+}
+.main-img {
+  background-image: url(images/Circle\ design.svg);
+}
+.img-zoom {
+  width: 440px;
+  height: 414px;
+  animation-name: transform;
+  animation-timing-function: ease-out;
+  transition-duration: 2s;
+}
+.header:hover .img-zoom {
+  transform: rotate3d(1, 1, 1, 30deg) scale(1.3);
+}
+/* Brand Logo */
+.brand-section {
+  margin-top: 70px;
+}
+
+.brands {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 80px;
+  padding: 18px 30px;
+  box-shadow: 0.1px 0.1px 10px #00000015;
+}
+.brands div {
+  margin-right: 60px;
+}
+
+/* Section1 Styles */
+main {
+  margin: 140px;
+}
+
+.section-title {
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 20px;
+  justify-items: center;
+}
+.product-info {
+  width: 330px;
+  height: 476px;
+  border: 2px solid #e2dbdbb4;
+  box-shadow: 5px 5px 10px 10px #e2dbdbb4;
+  border-radius: 5px;
+}
+.product-img {
+  width: 300px;
+  height: 256px;
+  margin-left: 15px;
+  margin-top: 15px;
+}
+.product-details {
+  margin-left: 15px;
+  padding-bottom: 17px;
+}
+.rating {
+  font-size: 12px;
+}
+.star {
+  color: #fb8200;
+}
+.product-details p {
+  font-size: 14px;
+  margin-top: 0;
+}
+.page-end {
+  font-size: 14px;
+  font-weight: 700;
+  color: #e02c6d;
+  text-align: right;
+  margin-right: 5px;
+}
+.last-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  width: 100%;
+  background-image: url(images/saykot.jpg);
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.list h2 {
+  font-size: 30px;
+  margin-left: 5px;
+  border-bottom: 5px solid whitesmoke;
+}
+.list {
+  margin-left: 700px;
+}
+
+.list li {
+  padding-bottom: 20px;
+  margin-left: 190px;
+  list-style: square;
+}
+
+/*--------------
+Footer Styles 
+-------------------*/
+.footer {
+  width: 100%;
+  background-color: rgb(3, 3, 39);
+
+  display: flex;
+  flex-direction: column;
+  color: white;
+  justify-content: center;
+  align-items: cnter;
+  text-align: center;
+}
+.social-link {
+  color: white;
+  margin: 10px;
+}
+
+/*------------------
+     Media Queries 
+    -----------------*/
+@media only screen and (max-width: 577px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-img {
+    margin-top: 40px;
+  }
+
+  .products {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+  }
+  .last-section {
+    background-position: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .list {
+    margin-left: 0px;
+  }
+  .list h2 {
+    margin-top: 60px;
+    margin-left: 90px;
+  }
+  .list a {
+    margin-left: 90px;
+  }
+}
+
+@media only screen and (min-width: 578px) and (max-width: 768px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-img {
+    margin-top: 40px;
+  }
+
+  .products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    justify-content: center;
+  }
+  .last-section {
+    background-position: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .list {
+    margin-left: 0px;
+  }
+  .list h2 {
+    margin-top: 60px;
+    margin-left: 90px;
+  }
+  .list a {
+    margin-left: 90px;
+  }
+}
